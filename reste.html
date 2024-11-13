@@ -11,7 +11,6 @@
 <style>
   .table-bordered td,
   .table-bordered th {
-    border: 1px solid black !important;
     vertical-align: middle;
   }
 
@@ -22,10 +21,7 @@
   .custom-input {
     width: 100px;
   }
-
-  table {}
 </style>
-
 <body>
 
   <!-- Navbar -->
@@ -64,6 +60,15 @@
     </button>
   </div>
 
+    <!-- Sobre a Clínica
+    <section id="sobre" class="py-5">
+      <div class="container text-center">
+        <h2>Sobre a Clínica</h2>
+        <p class="lead">A Clínica Podológica do Senac oferece tratamentos especializados para a saúde dos pés, com uma
+          equipe capacitada e utilizando equipamentos modernos para garantir o melhor atendimento aos pacientes.</p>
+      </div>
+    </section> -->
+
   <!-- Dados Gerais -->
   <div class="container my-5 table">
 
@@ -72,84 +77,64 @@
       <h2 class="text-center mb-4">Ficha de Avaliação Podológica</h2>
       <h4 class="mb-4">DADOS PESSOAIS</h4>
       <form>
-        <div class="row mb-3">
-          <div class="col-md-8">
-            <label for="nome" class="form-label">Nome:</label>
-            <input type="text" class="form-control" id="nome" name="nome">
-          </div>
-          <div class="col-md-4">
-            <label for="data" class="form-label">Data:</label>
-            <input type="date" class="form-control" id="data" name="data">
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label for="endereco" class="form-label">Endereço:</label>
-          <input type="text" class="form-control" id="endereco" name="endereco">
-        </div>
-
-        <div class="row mb-3">
-          <div class="col-md-4">
-            <label for="bairro" class="form-label">Bairro:</label>
-            <input type="text" class="form-control" id="bairro" name="bairro">
-          </div>
-          <div class="col-md-4">
-            <label for="cidade" class="form-label">Cidade:</label>
-            <input type="text" class="form-control" id="cidade" name="cidade">
-          </div>
-          <div class="col-md-4">
-            <label for="estado" class="form-label">Estado:</label>
-            <input type="text" class="form-control" id="estado" name="estado">
-          </div>
-        </div>
-
-        <div class="row mb-3">
-          <div class="col-md-3">
-            <label for="cep" class="form-label">CEP:</label>
-            <input type="text" class="form-control" id="cep" name="cep">
-          </div>
-          <div class="col-md-3">
-            <label for="telres" class="form-label">Tel. Res.:</label>
-            <input type="text" class="form-control" id="telres" name="telres">
-          </div>
-          <div class="col-md-3">
-            <label for="tel" class="form-label">Tel.:</label>
-            <input type="text" class="form-control" id="tel" name="tel">
-          </div>
-          <div class="col-md-3">
-            <label for="emergencia" class="form-label">Telefone de Emergência:</label>
-            <input type="text" class="form-control" id="emergencia" name="emergencia">
-          </div>
-        </div>
-
-        <div class="row mb-3">
-          <div class="col-md-3">
-            <label for="datanasc" class="form-label">Data de Nascimento:</label>
-            <input type="date" class="form-control" id="datanasc" name="datanasc">
-          </div>
-          <div class="col-md-2">
-            <label class="form-label">Sexo:</label>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="sexo" id="sexoF" value="Feminino">
-              <label class="form-check-label" for="sexoF">Feminino</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="sexo" id="sexoM" value="Masculino">
-              <label class="form-check-label" for="sexoM">Masculino</label>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <label for="profissao" class="form-label">Profissão:</label>
-            <input type="text" class="form-control" id="profissao" name="profissao">
-          </div>
-          <div class="col-md-3">
-            <label for="email" class="form-label">Email:</label>
-            <input type="email" class="form-control" id="email" name="email">
-          </div>
-        </div>
-
+        <table class="table table-bordered">
+          <tr>
+            <td><label for="nome" class="form-label">Nome:</label></td>
+            <td><input type="text" class="form-control" id="nome" name="nome"></td>
+            <td><label for="data" class="form-label">Data:</label></td>
+            <td><input type="date" class="form-control" id="data" name="data"></td>
+          </tr>
+          <tr>
+            <td><label for="endereco" class="form-label">Endereço:</label></td>
+            <td colspan="3"><input type="text" class="form-control" id="endereco" name="endereco"></td>
+          </tr>
+          <tr>
+            <td><label for="bairro" class="form-label">Bairro:</label></td>
+            <td><input type="text" class="form-control" id="bairro" name="bairro"></td>
+            <td><label for="cidade" class="form-label">Cidade:</label></td>
+            <td><input type="text" class="form-control" id="cidade" name="cidade"></td>
+          </tr>
+          <tr>
+            <td><label for="estado" class="form-label">Estado:</label></td>
+            <td><input type="text" class="form-control" id="estado" name="estado"></td>
+            <td><label for="cep" class="form-label">CEP:</label></td>
+            <td><input type="text" class="form-control" id="cep" name="cep"></td>
+          </tr>
+          <tr>
+            <td><label for="telres" class="form-label">Tel. Res.:</label></td>
+            <td><input type="text" class="form-control" id="telres" name="telres"></td>
+            <td><label for="tel" class="form-label">Tel.:</label></td>
+            <td><input type="text" class="form-control" id="tel" name="tel"></td>
+          </tr>
+          <tr>
+            <td><label for="emergencia" class="form-label">Telefone de Emergência:</label></td>
+            <td><input type="text" class="form-control" id="emergencia" name="emergencia"></td>
+            <td><label for="datanasc" class="form-label">Data de Nascimento:</label></td>
+            <td><input type="date" class="form-control" id="datanasc" name="datanasc"></td>
+          </tr>
+          <tr>
+            <td><label class="form-label">Sexo:</label></td>
+            <td colspan="3">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="sexo" id="sexoF" value="Feminino">
+                <label class="form-check-label" for="sexoF">Feminino</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="sexo" id="sexoM" value="Masculino">
+                <label class="form-check-label" for="sexoM">Masculino</label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="profissao" class="form-label">Profissão:</label></td>
+            <td><input type="text" class="form-control" id="profissao" name="profissao"></td>
+            <td><label for="email" class="form-label">Email:</label></td>
+            <td><input type="email" class="form-control" id="email" name="email"></td>
+          </tr>
+        </table>
       </form>
     </div>
+
   </div>
 
   <!-- Formulário de Avaliação Podológica -->
@@ -161,17 +146,17 @@
           <!-- Dados Gerais -->
           <div class="border p-3">
             <h4 class="text-center">DADOS GERAIS</h4>
-            <form>
+            <table class="table table-bordered">
               <!-- Queixa principal -->
-              <div class="mb-3">
-                <label for="queixa" class="form-label">Queixa principal:</label>
-                <input type="text" class="form-control" id="queixa" name="queixa">
-              </div>
+              <tr>
+                <td><label for="queixa" class="form-label">Queixa principal:</label></td>
+                <td><input type="text" class="form-control" id="queixa" name="queixa"></td>
+              </tr>
 
               <!-- Costuma ir ao Podólogo -->
-              <div class="row mb-3">
-                <div class="col-md-6">
-                  <label class="form-label">Costuma ir ao Podólogo?</label>
+              <tr>
+                <td><label class="form-label">Costuma ir ao Podólogo?</label></td>
+                <td>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="podologo" id="podologoSim" value="Sim">
                     <label class="form-check-label" for="podologoSim">Sim</label>
@@ -180,21 +165,21 @@
                     <input class="form-check-input" type="radio" name="podologo" id="podologoNao" value="Não">
                     <label class="form-check-label" for="podologoNao">Não</label>
                   </div>
-                </div>
-                <div class="col-md-6">
-                  <label for="frequenciaPodologo" class="form-label">Qual a frequência?</label>
-                  <input type="text" class="form-control" id="frequenciaPodologo" name="frequenciaPodologo">
-                </div>
-              </div>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="frequenciaPodologo" class="form-label">Qual a frequência?</label></td>
+                <td><input type="text" class="form-control" id="frequenciaPodologo" name="frequenciaPodologo"></td>
+              </tr>
 
               <!-- Uso de medicamentos e alergias -->
-              <div class="row mb-3">
-                <div class="col-md-6">
-                  <label for="medicamento" class="form-label">Faz uso de algum medicamento? Qual?</label>
-                  <input type="text" class="form-control" id="medicamento" name="medicamento">
-                </div>
-                <div class="col-md-6">
-                  <label for="alergico" class="form-label">Alérgico?</label>
+              <tr>
+                <td><label for="medicamento" class="form-label">Faz uso de algum medicamento? Qual?</label></td>
+                <td><input type="text" class="form-control" id="medicamento" name="medicamento"></td>
+              </tr>
+              <tr>
+                <td><label for="alergico" class="form-label">Alérgico?</label></td>
+                <td>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="alergico" id="alergicoSim" value="Sim">
                     <label class="form-check-label" for="alergicoSim">Sim</label>
@@ -205,63 +190,63 @@
                   </div>
                   <input type="text" class="form-control mt-2" placeholder="Quais substâncias?" id="substancias"
                     name="substancias">
-                </div>
-              </div>
+                </td>
+              </tr>
 
               <!-- Posição de trabalho -->
-              <div class="row mb-3">
-                <label class="form-label">Posição de trabalho:</label>
-                <div class="form-check col-md-3">
-                  <input class="form-check-input" type="radio" name="posicao" id="emPe" value="Em pé">
-                  <label class="form-check-label" for="emPe">Em pé</label>
-                </div>
-                <div class="form-check col-md-3">
-                  <input class="form-check-input" type="radio" name="posicao" id="sentado" value="Sentado">
-                  <label class="form-check-label" for="sentado">Sentado</label>
-                </div>
-                <div class="form-check col-md-3">
-                  <input class="form-check-input" type="radio" name="posicao" id="andando" value="Andando">
-                  <label class="form-check-label" for="andando">Andando</label>
-                </div>
-                <div class="col-md-3">
-                  <label for="duracao" class="form-label">Duração (hs):</label>
-                  <input type="text" class="form-control" id="duracao" name="duracao">
-                </div>
-              </div>
+              <tr>
+                <td><label class="form-label">Posição de trabalho:</label></td>
+                <td>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="posicao" id="emPe" value="Em pé">
+                    <label class="form-check-label" for="emPe">Em pé</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="posicao" id="sentado" value="Sentado">
+                    <label class="form-check-label" for="sentado">Sentado</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="posicao" id="andando" value="Andando">
+                    <label class="form-check-label" for="andando">Andando</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="duracao" class="form-label">Duração (hs):</label></td>
+                <td><input type="text" class="form-control" id="duracao" name="duracao"></td>
+              </tr>
 
               <!-- Passa a maior parte do tempo -->
-              <div class="row mb-3">
-                <label class="form-label">Passa a maior parte do tempo:</label>
-                <div class="form-check col-md-4">
-                  <input class="form-check-input" type="radio" name="maiorTempo" id="tempoEmPe" value="Em pé">
-                  <label class="form-check-label" for="tempoEmPe">Em pé</label>
-                </div>
-                <div class="form-check col-md-4">
-                  <input class="form-check-input" type="radio" name="maiorTempo" id="tempoSentado" value="Sentado">
-                  <label class="form-check-label" for="tempoSentado">Sentado</label>
-                </div>
-                <div class="form-check col-md-4">
-                  <input class="form-check-input" type="radio" name="maiorTempo" id="tempoAndando" value="Andando">
-                  <label class="form-check-label" for="tempoAndando">Andando</label>
-                </div>
-              </div>
+              <tr>
+                <td><label class="form-label">Passa a maior parte do tempo:</label></td>
+                <td>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="maiorTempo" id="tempoEmPe" value="Em pé">
+                    <label class="form-check-label" for="tempoEmPe">Em pé</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="maiorTempo" id="tempoSentado" value="Sentado">
+                    <label class="form-check-label" for="tempoSentado">Sentado</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="maiorTempo" id="tempoAndando" value="Andando">
+                    <label class="form-check-label" for="tempoAndando">Andando</label>
+                  </div>
+                </td>
+              </tr>
 
               <!-- Tipo de calçado -->
-              <div class="row mb-3">
-                <div class="col-md-6">
-                  <label for="numeroCalcado" class="form-label">Nº Calçado:</label>
-                  <input type="text" class="form-control" id="numeroCalcado" name="numeroCalcado">
-                </div>
-                <div class="col-md-6">
-                  <label for="tipoCalcado" class="form-label">Tipo de calçado de uso diário:</label>
-                  <input type="text" class="form-control" id="tipoCalcado" name="tipoCalcado">
-                </div>
-              </div>
+              <tr>
+                <td><label for="numeroCalcado" class="form-label">Nº Calçado:</label></td>
+                <td><input type="text" class="form-control" id="numeroCalcado" name="numeroCalcado"></td>
+                <td><label for="tipoCalcado" class="form-label">Tipo de calçado de uso diário:</label></td>
+                <td><input type="text" class="form-control" id="tipoCalcado" name="tipoCalcado"></td>
+              </tr>
 
               <!-- Uso de palmilha -->
-              <div class="row mb-3">
-                <div class="col-md-6">
-                  <label class="form-label">Faz uso de palmilha?</label>
+              <tr>
+                <td><label class="form-label">Faz uso de palmilha?</label></td>
+                <td>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="palmilha" id="palmilhaSim" value="Sim">
                     <label class="form-check-label" for="palmilhaSim">Sim</label>
@@ -270,23 +255,23 @@
                     <input class="form-check-input" type="radio" name="palmilha" id="palmilhaNao" value="Não">
                     <label class="form-check-label" for="palmilhaNao">Não</label>
                   </div>
-                  <div class="form-check mt-2">
-                    <input class="form-check-input" type="checkbox" name="palmilhaOrtopedica" id="ortopedica"
-                      value="Ortopédica">
-                    <label class="form-check-label" for="ortopedica">Ortopédica</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="palmilhaDescanso" id="descanso"
-                      value="Descanso">
-                    <label class="form-check-label" for="descanso">Descanso</label>
-                  </div>
-                </div>
-              </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="form-check-input" type="checkbox" name="palmilhaOrtopedica" id="ortopedica"
+                    value="Ortopédica">
+                  <label class="form-check-label" for="ortopedica">Ortopédica</label>
+                </td>
+                <td><input class="form-check-input" type="checkbox" name="palmilhaDescanso" id="descanso"
+                    value="Descanso">
+                  <label class="form-check-label" for="descanso">Descanso</label>
+                </td>
+              </tr>
 
               <!-- Fumante -->
-              <div class="row mb-3">
-                <div class="col-md-4">
-                  <label class="form-label">É fumante?</label>
+              <tr>
+                <td><label class="form-label">É fumante?</label></td>
+                <td>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="fumante" id="fumanteSim" value="Sim">
                     <label class="form-check-label" for="fumanteSim">Sim</label>
@@ -295,13 +280,13 @@
                     <input class="form-check-input" type="radio" name="fumante" id="fumanteNao" value="Não">
                     <label class="form-check-label" for="fumanteNao">Não</label>
                   </div>
-                </div>
-              </div>
+                </td>
+              </tr>
 
               <!-- Ciclo menstrual, gestante e amamentando -->
-              <div class="row mb-3">
-                <div class="col-md-4">
-                  <label class="form-label">Ciclo Menstrual Regular?</label>
+              <tr>
+                <td><label class="form-label">Ciclo Menstrual Regular?</label></td>
+                <td>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="cicloMenstrual" id="cicloSim" value="Sim">
                     <label class="form-check-label" for="cicloSim">Sim</label>
@@ -310,13 +295,15 @@
                     <input class="form-check-input" type="radio" name="cicloMenstrual" id="cicloNao" value="Não">
                     <label class="form-check-label" for="cicloNao">Não</label>
                   </div>
-                </div>
-                <div class="col-md-4">
-                  <label for="dum" class="form-label">DUM:</label>
-                  <input type="date" class="form-control" id="dum" name="dum">
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label">Está gestante?</label>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="dum" class="form-label">DUM:</label></td>
+                <td><input type="date" class="form-control" id="dum" name="dum"></td>
+              </tr>
+              <tr>
+                <td><label class="form-label">Está gestante?</label></td>
+                <td>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="gestante" id="gestanteSim" value="Sim">
                     <label class="form-check-label" for="gestanteSim">Sim</label>
@@ -325,7 +312,11 @@
                     <input class="form-check-input" type="radio" name="gestante" id="gestanteNao" value="Não">
                     <label class="form-check-label" for="gestanteNao">Não</label>
                   </div>
-                  <label class="form-label mt-2">Está amamentando?</label>
+                </td>
+              </tr>
+              <tr>
+                <td><label class="form-label">Está amamentando?</label></td>
+                <td>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="amamentando" id="amamentandoSim" value="Sim">
                     <label class="form-check-label" for="amamentandoSim">Sim</label>
@@ -334,13 +325,13 @@
                     <input class="form-check-input" type="radio" name="amamentando" id="amamentandoNao" value="Não">
                     <label class="form-check-label" for="amamentandoNao">Não</label>
                   </div>
-                </div>
-              </div>
+                </td>
+              </tr>
 
               <!-- Atividade física -->
-              <div class="row mb-3">
-                <div class="col-md-6">
-                  <label class="form-label">Pratica atividade física?</label>
+              <tr>
+                <td><label class="form-label">Pratica atividade física?</label></td>
+                <td>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="atividadeFisica" id="atividadeSim" value="Sim">
                     <label class="form-check-label" for="atividadeSim">Sim</label>
@@ -349,299 +340,271 @@
                     <input class="form-check-input" type="radio" name="atividadeFisica" id="atividadeNao" value="Não">
                     <label class="form-check-label" for="atividadeNao">Não</label>
                   </div>
-                </div>
-                <div class="col-md-3">
-                  <label for="frequenciaAtividade" class="form-label">Frequência?</label>
-                  <input type="text" class="form-control" id="frequenciaAtividade" name="frequenciaAtividade">
-                </div>
-                <div class="col-md-3">
-                  <label for="tipoEsporte" class="form-label">Qual esporte e tipo de calçado?</label>
-                  <input type="text" class="form-control" id="tipoEsporte" name="tipoEsporte">
-                </div>
-              </div>
-
-              <!-- Botão de Enviar -->
-            </form>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="frequenciaAtividade" class="form-label">Frequência?</label></td>
+                <td><input type="text" class="form-control" id="frequenciaAtividade" name="frequenciaAtividade"></td>
+              </tr>
+              <tr>
+                <td><label for="tipoEsporte" class="form-label">Qual esporte e tipo de calçado?</label></td>
+                <td><input type="text" class="form-control" id="tipoEsporte" name="tipoEsporte"></td>
+              </tr>
+            </table>
           </div>
         </div>
-
-        <!-- Dados Clínicos -->
-        <div class="container mt-5">
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th colspan="4" class="text-center card-header bg-secondary text-white">DADOS CLÍNICOS</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><input type="checkbox"> Gestante</td>
-                <td><input type="checkbox"> Hipertireoidismo</td>
-                <td><input type="checkbox"> Renal</td>
-                <td><input type="checkbox"> Epilepsia</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"> Osteoporose</td>
-                <td><input type="checkbox"> Hipotireoidismo</td>
-                <td><input type="checkbox"> Neuropatia</td>
-                <td><input type="checkbox"> Hepatite</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"> Cardiopatia</td>
-                <td><input type="checkbox"> Hipertensão</td>
-                <td><input type="checkbox"> Reumatismo</td>
-                <td><input type="checkbox"> Hanseníase</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"> Marca Passo</td>
-                <td><input type="checkbox"> Hipotensão</td>
-                <td><input type="checkbox"> Alterações ou Comprometimento Vasculares</td>
-                <td><input type="checkbox"> Quimioterapia / Radioterapia</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"> Antecedentes Oncológicos</td>
-                <td colspan="3"><input type="checkbox"> Cirurgia MMII</td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="form-check form-check-inline">
-                    <label class="form-check-label">Diabetes:</label>
-                    <input class="form-check-input" type="radio" name="diabetes" value="S"> S
-                    <input class="form-check-input" type="radio" name="diabetes" value="N"> N
-                  </div>
-                </td>
-                <td>
-                  <div class="form-check form-check-inline">
-                    <label class="form-check-label">Insulina:</label>
-                    <input class="form-check-input" type="radio" name="insulina" value="S"> S
-                    <input class="form-check-input" type="radio" name="insulina" value="N"> N
-                  </div>
-                </td>
-                <td>
-                  <div class="form-check form-check-inline">
-                    <label class="form-check-label">Dieta Hídrica:</label>
-                    <input class="form-check-input" type="radio" name="dieta_hidrica" value="S"> S
-                    <input class="form-check-input" type="radio" name="dieta_hidrica" value="N"> N
-                  </div>
-                </td>
-                <td>
-                  <div class="form-inline">
-                    <label class="form-label mr-2">Taxa Glicêmica:</label>
-                    <input type="text" class="form-control custom-input">
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="form-check form-check-inline">
-                    <label class="form-check-label">Insulina:</label>
-                    <input class="form-check-input" type="radio" name="insulina_tipo" value="Injetável"> Injetável
-                    <input class="form-check-input" type="radio" name="insulina_tipo" value="Oral"> Via Oral
-                  </div>
-                </td>
-                <td>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="dieta_alimentar" value="Dieta Alimentar">
-                    <label class="form-check-label">Dieta alimentar</label>
-                  </div>
-                </td>
-                <td>
-                  <div class="form-inline">
-                    <label class="form-label mr-2">Data da última Verificação:</label>
-                    <input type="text" class="form-control custom-input" placeholder="__/__/__">
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="container mt-5">
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th colspan="4" class="text-center card-header bg-secondary text-white">ALTERAÇÕES E LESÕES DOS PÉS
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td colspan="3" class="header-title">Tipo de Pisada</td>
-                <td rowspan="3" class="header-title">
-                  Dedos:
-                  <div class="ml-3">
-                    <div class="form-check form-check-inline">
-                      <label class="form-check-label">Flexível</label>
-                      <input class="form-check-input" type="checkbox"> D
-                      <input class="form-check-input ml-3" type="checkbox"> E
-                    </div><br>
-                    <div class="form-check form-check-inline">
-                      <label class="form-check-label">Rígido</label>
-                      <input class="form-check-input" type="checkbox"> D
-                      <input class="form-check-input ml-3" type="checkbox"> E
-                    </div><br>
-                    <div class="form-check form-check-inline">
-                      <label class="form-check-label">Espalmado</label>
-                      <input class="form-check-input" type="checkbox"> D
-                      <input class="form-check-input ml-3" type="checkbox"> E
-                    </div><br>
-                    <div class="form-check form-check-inline">
-                      <label class="form-check-label">Martelo</label>
-                      <input class="form-check-input" type="checkbox"> D
-                      <input class="form-check-input ml-3" type="checkbox"> E
-                    </div><br>
-                    <div class="form-check form-check-inline">
-                      <label class="form-check-label">Queda de Metatarso</label>
-                      <input class="form-check-input" type="checkbox"> D
-                      <input class="form-check-input ml-3" type="checkbox"> E
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="foot-type">
-                  <img src="/img/image-removebg-preview (1).png" alt="Cavo / Supinado" width="100px"><br>
-
-                  <input class="form-check-input" type="radio" name="marcha" value="normal">
-                  <label class="form-check-label">Cavo / Supinado</label>
-                </td>
-                <td class="foot-type">
-                  <img src="/img/image-removebg-preview (2).png" alt="Normal / Neutro" width="90px"><br>
-                  <input class="form-check-input" type="radio" name="marcha" value="normal">
-                  <label class="form-check-label">Normal / Neutro</label>
-
-                </td>
-                <td class="foot-type">
-                  <img src="/img/image-removebg-preview (3).png" alt="Plano / Pronado" width="100px"><br>
-                  <input class="form-check-input" type="radio" name="marcha" value="normal">
-                  <label class="form-check-label">Normal / Neutro</label>
-
-                </td>
-              </tr>
-              <tr>
-                <td colspan="3">
-                  <hr>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="4">
-                  <div class="container mt-5">
-                    <div class="row">
-                      <!-- Coluna Tipo de Marcha -->
-                      <div class="col-md-3 border-right-custom">
-                        <label class="header-title">Tipo de Marcha</label>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="marcha" value="normal">
-                          <label class="form-check-label">Normal</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="marcha" value="patologica">
-                          <label class="form-check-label">Patológica</label>
-                          <input type="text" class="form-control custom-input d-inline ml-2" placeholder="Qual?">
-                        </div>
-                      </div>
-
-                      <!-- Coluna Joelho -->
-                      <div class="col-md-3 border-right-custom">
-                        <label class="header-title">Joelho</label>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="joelho" value="normal">
-                          <label class="form-check-label">Normal</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="joelho" value="valgo">
-                          <label class="form-check-label">Valgo</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="joelho" value="varo">
-                          <label class="form-check-label">Varo</label>
-                        </div>
-                      </div>
-
-                      <!-- Coluna Articulação -->
-                      <div class="col-md-3 border-right-custom">
-                        <label class="header-title">Articulação</label>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="articulacao" value="retrope">
-                          <label class="form-check-label">Retropé</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="articulacao" value="chopart">
-                          <label class="form-check-label">Chopart</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="articulacao" value="mediope">
-                          <label class="form-check-label">Mediopé</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="articulacao" value="lisfranc">
-                          <label class="form-check-label">Lisfranc</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="articulacao" value="antepe">
-                          <label class="form-check-label">Antepé</label>
-                        </div>
-                      </div>
-
-                      <!-- Coluna Sensibilidade à Dor -->
-                      <div class="col-md-3">
-                        <label class="header-title">Sensibilidade à dor</label>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="sensibilidade" value="diminuida">
-                          <label class="form-check-label">Diminuída</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="sensibilidade" value="normal">
-                          <label class="form-check-label">Normal</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="sensibilidade" value="aumentada">
-                          <label class="form-check-label">Aumentada</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <!-- Termo de Responsabilidade 
-                <div class="card mb-4">
-                    <div class="card-header bg-warning text-white">
-                        <h3>Termo de Responsabilidade</h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Eu, ___________________________________________, portador(a) do RG n° ________ e inscrito(a) no CPF/MF sob n° ________, aceito submeter-me ao procedimento de Podologia conforme descrito acima...</p>
-                        <div class="mb-3">
-                            <label for="data" class="form-label">Data</label>
-                            <input type="date" class="form-control" id="data">
-                        </div>
-                        <div class="mb-3">
-                            <label for="assinatura" class="form-label">Assinatura</label>
-                            <input type="text" class="form-control" id="assinatura" placeholder="Assinatura">
-                        </div>
-                    </div>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Enviar</button>
-                <button type="reset" class="btn btn-secondary">Cancelar</button>-->
       </form>
     </div>
   </section>
 
-  <!-- Sobre a Clínica -->
-  <section id="sobre" class="bg-light py-5">
-    <div class="container text-center">
-      <h2>Sobre a Clínica</h2>
-      <p class="lead">A Clínica Podológica do Senac oferece tratamentos especializados para a saúde dos pés, com uma
-        equipe capacitada e utilizando equipamentos modernos para garantir o melhor atendimento aos pacientes.</p>
-    </div>
+  <!-- Dados Clínicos -->
+  <div class="container mt-5">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th colspan="4" class="text-center card-header">DADOS CLÍNICOS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox"> Gestante</td>
+          <td><input type="checkbox"> Hipertireoidismo</td>
+          <td><input type="checkbox"> Renal</td>
+          <td><input type="checkbox"> Epilepsia</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"> Osteoporose</td>
+          <td><input type="checkbox"> Hipotireoidismo</td>
+          <td><input type="checkbox"> Neuropatia</td>
+          <td><input type="checkbox"> Hepatite</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"> Cardiopatia</td>
+          <td><input type="checkbox"> Hipertensão</td>
+          <td><input type="checkbox"> Reumatismo</td>
+          <td><input type="checkbox"> Hanseníase</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"> Marca Passo</td>
+          <td><input type="checkbox"> Hipotensão</td>
+          <td><input type="checkbox"> Alterações ou Comprometimento Vasculares</td>
+          <td><input type="checkbox"> Quimioterapia / Radioterapia</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"> Antecedentes Oncológicos</td>
+          <td colspan="3"><input type="checkbox"> Cirurgia MMII</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="form-check form-check-inline">
+              <label class="form-check-label">Diabetes:</label>
+              <input type="checkbox"> Sim
+              <input type="checkbox"> Não
+            </div>
+          </td>
+          <td>
+            <div class="form-check form-check-inline">
+              <label class="form-check-label">Insulina:</label>
+              <input type="checkbox"> Sim
+              <input type="checkbox"> Não
+            </div>
+          </td>
+          <td>
+            <div class="form-check form-check-inline">
+              <label class="form-check-label">Dieta Hídrica:</label>
+              <input type="checkbox"> Sim
+              <input type="checkbox"> Não
+            </div>
+          </td>
+          <td>
+            <div class="form-inline">
+              <label class="form-label mr-2">Taxa Glicêmica:</label>
+              <input type="text" class="form-control custom-input">
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="form-check form-check-inline">
+              <label class="form-check-label">Insulina:</label>
+              <input type="checkbox"> Injetável
+              <input type="checkbox"> Via Oral
+            </div>
+          </td>
+          <td>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="dieta_alimentar" value="Dieta Alimentar">
+              <label class="form-check-label">Dieta alimentar</label>
+            </div>
+          </td>
+          <td>
+            <div class="form-inline">
+              <label class="form-label mr-2">Data da última Verificação:</label>
+              <input type="text" class="form-control custom-input" placeholder="__/__/__">
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container mt-5">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th colspan="4" class="text-center card-header">ALTERAÇÕES E LESÕES DOS PÉS
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="3" class="header-title">Tipo de Pisada</td>
+          <td rowspan="3" class="header-title">
+            Dedos:
+            <div class="ml-3">
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">Flexível</label>
+                <input type="checkbox"> D
+                <input type="checkbox"> E
+              </div><br>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">Rígido
+                  <input type="checkbox"> D
+                  <input type="checkbox"> E
+              </div><br>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">Espalmado</label>
+                <input type="checkbox"> D
+                <input type="checkbox"> E
+              </div><br>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">Martelo</label>
+                <input type="checkbox"> D
+                <input type="checkbox"> E
+              </div><br>
+              <div class="form-check form-check-inline">
+                <label class="form-check-label">Queda de Metatarso</label>
+                <input type="checkbox"> D
+                <input type="checkbox"> E
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="foot-type">
+            <img src="/img/image-removebg-preview (1).png" alt="Cavo / Supinado" width="100px"><br>
+
+            <input class="form-check-input" type="radio" name="marcha" value="normal">
+            <label class="form-check-label">Cavo / Supinado</label>
+          </td>
+          <td class="foot-type">
+            <img src="/img/image-removebg-preview (2).png" alt="Normal / Neutro" width="90px"><br>
+            <input class="form-check-input" type="radio" name="marcha" value="normal">
+            <label class="form-check-label">Normal / Neutro</label>
+
+          </td>
+          <td class="foot-type">
+            <img src="/img/image-removebg-preview (3).png" alt="Plano / Pronado" width="100px"><br>
+            <input class="form-check-input" type="radio" name="marcha" value="normal">
+            <label class="form-check-label">Normal / Neutro</label>
+
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <hr>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <div class="container mt-5">
+              <div class="row">
+                <!-- Coluna Tipo de Marcha -->
+                <div class="col-md-3 border-right-custom">
+                  <label class="header-title">Tipo de Marcha</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="marcha" value="normal">
+                    <label class="form-check-label">Normal</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="marcha" value="patologica">
+                    <label class="form-check-label">Patológica</label>
+                    <input type="text" class="form-control custom-input d-inline ml-2" placeholder="Qual?">
+                  </div>
+                </div>
+
+                <!-- Coluna Joelho -->
+                <div class="col-md-3 border-right-custom">
+                  <label class="header-title">Joelho</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="joelho" value="normal">
+                    <label class="form-check-label">Normal</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="joelho" value="valgo">
+                    <label class="form-check-label">Valgo</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="joelho" value="varo">
+                    <label class="form-check-label">Varo</label>
+                  </div>
+                </div>
+
+                <!-- Coluna Articulação -->
+                <div class="col-md-3 border-right-custom">
+                  <label class="header-title">Articulação</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="articulacao" value="retrope">
+                    <label class="form-check-label">Retropé</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="articulacao" value="chopart">
+                    <label class="form-check-label">Chopart</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="articulacao" value="mediope">
+                    <label class="form-check-label">Mediopé</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="articulacao" value="lisfranc">
+                    <label class="form-check-label">Lisfranc</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="articulacao" value="antepe">
+                    <label class="form-check-label">Antepé</label>
+                  </div>
+                </div>
+
+                <!-- Coluna Sensibilidade à Dor -->
+                <div class="col-md-3">
+                  <label class="header-title">Sensibilidade à dor</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sensibilidade" value="diminuida">
+                    <label class="form-check-label">Diminuída</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sensibilidade" value="normal">
+                    <label class="form-check-label">Normal</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sensibilidade" value="aumentada">
+                    <label class="form-check-label">Aumentada</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  </form>
+  </div>
   </section>
 
-  <!-- Contato -->
+  <!-- Contato 
   <section id="contato" class="py-5">
     <div class="container text-center">
       <h2>Contato</h2>
@@ -649,7 +612,7 @@
       <p>Email: atendimento@senacpodologia.com.br</p>
       <p>Telefone: (11) 1234-5678</p>
     </div>
-  </section>
+  </section>-->
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
@@ -659,5 +622,4 @@
   <!-- JavaScript do Bootstrap -->
   <script src="/js/bootstrap.js"></script>
 </body>
-
 </html>
